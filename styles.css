@@ -1,0 +1,145 @@
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+p, li {
+    color: hsl(30, 10%, 34%);
+    margin: 10px 0;
+}
+
+.recipe-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: hsl(30, 54%, 90%);
+}
+
+.recipe-card {
+    padding: 32px;
+    margin: 64px auto;
+    background-color: white;
+    border-radius: 16px;
+    width: min(42rem, 90vw);
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+img {
+    margin-bottom: 20px;
+    border-radius: 8px;
+}
+
+.recipe-title {
+    font-size: 48px;
+    font-weight: 600;
+}
+
+.recipe-description, 
+.section-title, 
+.preparation-time, 
+img {
+    margin: 20px 0;
+}
+
+.preparation-time {
+    background-color: hsla(332, 51%, 32%, 0.08);
+    border-radius: 8px;
+    padding: 20px;
+}
+
+.prep-title {
+    color: hsl(332, 51%, 32%);
+    margin: 0 0 12px 0;
+}
+
+.prep-list, 
+.ingredients-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.ing-value::before, 
+.prep-label::before {
+    content: "•";
+    color: hsl(332, 51%, 32%);
+    margin-right: 20px;
+}
+
+.prep-label {
+    font-weight: bold;
+    padding-left: 5px;
+}
+
+.section-title {
+    font-size: 24px;
+    color: hsl(14, 45%, 36%);
+}
+
+.step-title {
+    font-weight: bold;
+}
+
+.instructions-list li::marker {
+    color: hsl(14, 45%, 36%);
+    font-weight: bold;
+}
+
+.instructions-list {
+    padding-left: 18px;
+}
+
+.step-list {
+    padding-left: 10px;
+}
+
+.nutrition-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.nutrition-row {
+    border-bottom: 1px solid #e8e5e0;
+    
+}
+
+.nutrition-row:last-child {
+    border-bottom: none;
+}
+
+.nutrition-label {
+    color: hsl(30, 10%, 34%);
+    font-weight: normal;
+    text-align: left;
+    padding-left: 18px;
+    
+}
+
+.nutrition-value {
+    text-align: start;
+    color: hsl(14, 45%, 36%);
+    font-weight: bold;
+    padding: 8px;
+    
+}
+hr{
+    border: none;
+    border-top: 1px solid hsla(14, 45%, 36%, 0.20);
+    margin: 20px 0;
+
+}
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.attribution {
+    font-size: 11px;
+    text-align: center;
+    margin: 20px 0;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}

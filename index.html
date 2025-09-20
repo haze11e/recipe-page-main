@@ -4,23 +4,14 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="styles.css">
   <title>Frontend Mentor | Recipe page</title>
-  <style>
-    .attribution { 
-      font-size: 11px; 
-      text-align: center; 
-      margin-top: 2rem;
-    }
-    .attribution a { 
-      color: hsl(228, 45%, 44%); 
-    }
-  </style>
 </head>
 <body>
   <main class="recipe-container">
     <article class="recipe-card">
       <div class="recipe-image">
-        <img src="./assets/images/image-omelette.jpeg" alt="Golden omelette with herbs on a white plate">
+        <img src="./assets/images/image-omelette.jpeg" alt="Golden omelette with herbs on a white plate" width="100%" height="auto">
       </div>
 
       <header class="recipe-header">
@@ -32,7 +23,7 @@
       </header>
       
       <section class="preparation-time">
-        <h2 class="prep-title">Preparation time</h2>
+        <h3 class="prep-title">Preparation time</h3>
         <ul class="prep-list">
           <li><span class="prep-label">Total:</span> Approximately 10 minutes</li>
           <li><span class="prep-label">Preparation:</span> 5 minutes</li>
@@ -43,36 +34,50 @@
       <section class="ingredients">
         <h2 class="section-title">Ingredients</h2>
         <ul class="ingredients-list">
-          <li>2-3 large eggs</li>
-          <li>Salt, to taste</li>
-          <li>Pepper, to taste</li>
-          <li>1 tablespoon of butter or oil</li>
-          <li>Optional fillings: cheese, diced vegetables, cooked meats, herbs</li>
+          <li><span class="ing-value">2-3 large eggs</span></li>
+          <li><span class="ing-value">Salt, to taste</span></li>
+          <li><span class="ing-value">Pepper, to taste</span></li>
+          <li><span class="ing-value">1 tablespoon of butter or oil</span></li>
+          <li><span class="ing-value">Optional fillings: cheese, diced vegetables, cooked meats, herbs</span></li>
         </ul>
+        <hr>
       </section>
       
       <section class="instructions">
         <h2 class="section-title">Instructions</h2>
         <ol class="instructions-list">
           <li>
-            <span class="step-title">Beat the eggs:</span> In a bowl, beat the eggs with a pinch of salt and pepper until they are well mixed. You can add a tablespoon of water or milk for a fluffier texture.
+            <div class="step-list">
+               <span class="step-title">Beat the eggs:</span> In a bowl, beat the eggs with a pinch of salt and pepper until they are well mixed. You can add a tablespoon of water or milk for a fluffier texture.
+            </div>
           </li>
           <li>
-            <span class="step-title">Heat the pan:</span> Place a non-stick frying pan over medium heat and add butter or oil.
+            <div class="step-list">
+                <span class="step-title">Heat the pan:</span> Place a non-stick frying pan over medium heat and add butter or oil.
+            </div>
           </li>
           <li>
-            <span class="step-title">Cook the omelette:</span> Once the butter is melted and bubbling, pour in the eggs. Tilt the pan to ensure the eggs evenly coat the surface.
+            <div class="step-list">
+                 <span class="step-title">Cook the omelette:</span> Once the butter is melted and bubbling, pour in the eggs. Tilt the pan to ensure the eggs evenly coat the surface.
+            </div>
           </li>
           <li>
-            <span class="step-title">Add fillings (optional):</span> When the eggs begin to set at the edges but are still slightly runny in the middle, sprinkle your chosen fillings over one half of the omelette.
+            <div class="step-list">
+                <span class="step-title">Add fillings (optional):</span> When the eggs begin to set at the edges but are still slightly runny in the middle, sprinkle your chosen fillings over one half of the omelette.
+            </div>
           </li>
           <li>
-            <span class="step-title">Fold and serve:</span> As the omelette continues to cook, carefully lift one edge and fold it over the fillings. Let it cook for another minute, then slide it onto a plate.
+            <div class="step-list">
+                <span class="step-title">Fold and serve:</span> As the omelette continues to cook, carefully lift one edge and fold it over the fillings. Let it cook for another minute, then slide it onto a plate.
+            </div>
           </li>
           <li>
-            <span class="step-title">Enjoy:</span> Serve hot, with additional salt and pepper if needed.
+            <div class="step-list">
+                <span class="step-title">Enjoy:</span> Serve hot, with additional salt and pepper if needed.
+            </div>   
           </li>
         </ol>
+        <hr>
       </section>
       
       <section class="nutrition">
@@ -101,14 +106,12 @@
           </tbody>
         </table>
       </section>
-      
     </article>
   </main>
   
-  <!-- Footer with attribution -->
   <footer class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Hazelle Jane Asence</a>.
+    Coded by <a href="#">Hazelle A.</a>.
   </footer>
 </body>
 </html>
